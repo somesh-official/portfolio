@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somesh - Portfolio</title>
+    <meta name="description" content="Personal Portfolio Website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Premium Background -->
+    <div class="bg-modern">
+        <div class="bg-aurora"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-noise"></div>
+    </div>
+
+    <div class="cursor-blob"></div>
+    <div class="cursor-blob-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <span class="gradient-text">Somesh.</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home" id="home">
+            <div class="particle-network-animation" id="particle-canvas"></div>
+            <div class="home-container container">
+                <div class="home-content z-index-1">
+                    <span class="home-subtitle" id="home-greeting"></span>
+                    <h1 class="home-title">I'm <span class="gradient-text">Somesh</span></h1>
+                    <h3 class="home-role">
+                        <span class="typing-container">
+                            <span id="typing-text"></span><span class="cursor">|</span>
+                        </span>
+                    </h3>
+                    <p class="home-description">
+                        Passionate about crafting dynamic, modern, and beautiful user experiences. I bring ideas to life
+                        through elegant code and stunning UI/UX design. Let's build something amazing together.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            Let's Talk <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            View Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" class="scroll-link">
+                    <i class="fas fa-mouse"></i>
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Bento Box Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom">About <span class="gradient-text">Me</span></h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">Get to know the developer</span>
+
+                <div class="bento-grid">
+                    <!-- Bio Box -->
+                    <div class="bento-box bento-bio glass-card" data-reveal="left" data-delay="200">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <h3 class="bento-title">My Journey</h3>
+                        <p class="bento-text" id="about-text">
+                            <!-- Injected by JS -->
+                        </p>
+                    </div>
+
+                    <!-- Meta Boxes -->
+                    <div class="bento-box glass-card center-content" data-reveal="bottom" data-delay="300">
+                        <div class="bento-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4 class="bento-title-small">Location</h4>
+                        <p class="bento-val" id="about-location"></p>
+                    </div>
+
+                    <div class="bento-box glass-card center-content" data-reveal="bottom" data-delay="400">
+                        <div class="bento-icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
+                        <h4 class="bento-title-small">Education</h4>
+                        <p class="bento-val">B.Tech IT</p>
+                    </div>
+
+                    <div class="bento-box glass-card center-content bento-socials" data-reveal="right" data-delay="500">
+                        <h4 class="bento-title-small">Connect</h4>
+                        <div class="social-flex">
+                            <a href="#" id="social-github" target="_blank" class="social-icon"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#" id="social-linkedin" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#" id="social-email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom">Technical <span class="gradient-text">Arsenal</span></h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">Tools I use to create magic</span>
+
+                <div class="skills-wrapper" data-reveal="bottom" data-delay="200">
+                    <ul class="skills-tabs" id="skills-tabs">
+                        <li class="skills-tab active" data-filter="all">All</li>
+                        <li class="skills-tab" data-filter="Frontend">Frontend</li>
+                        <li class="skills-tab" data-filter="Backend">Backend</li>
+                        <li class="skills-tab" data-filter="Database">Database</li>
+                        <li class="skills-tab" data-filter="Design">Design</li>
+                        <li class="skills-tab" data-filter="Tools">Tools</li>
+                    </ul>
+
+                    <div class="skills-grid-new" id="skills-grid-new">
+                        <!-- Dynamic Skills Injected Here by Tabs -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom">Featured <span class="gradient-text">Work</span></h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">A showcase of my latest
+                    projects</span>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects injected dynamically by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom"><span class="gradient-text">Awards</span> &
+                    Certifications</h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">Continuous learning and
+                    achievements</span>
+
+                <div class="cert-grid" id="cert-grid">
+                    <!-- Certifications injected dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom">My <span class="gradient-text">Education</span></h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">Academic Background</span>
+
+                <div class="timeline" id="education-timeline" data-reveal="bottom" data-delay="200">
+                    <!-- Education injected dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="resume section" id="resume">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom">My <span class="gradient-text">Resume</span></h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">Download my curriculum vitae</span>
+
+                <div class="resume-wrapper glass-card" data-reveal="bottom" data-delay="200">
+                    <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+                    <p class="resume-text">
+                        Want to know more about my experience and skills? You can download my complete resume below to
+                        get the full picture of my professional background.
+                    </p>
+                    <a href="#" id="resume-download-btn" class="btn btn-primary" download="Somesh_Resume.pdf" target="_blank">
+                        Download Resume <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-reveal="bottom">Let's <span class="gradient-text">Connect</span></h2>
+                <span class="section-subtitle" data-reveal="bottom" data-delay="100">Have an idea? Let's build
+                    it!</span>
+
+                <div class="contact-container" data-reveal="bottom" data-delay="200">
+                    <div class="contact-info glass-card">
+                        <h3 class="contact-form-title">Reach out directly</h3>
+                        <div class="contact-list">
+                            <div class="contact-card">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-card-data">
+                                    <span class="contact-card-title">Email</span>
+                                    <span class="contact-card-detail" id="contact-email"></span>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                <div class="contact-card-data">
+                                    <span class="contact-card-title">Phone</span>
+                                    <span class="contact-card-detail" id="contact-phone"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact-form glass-card">
+                        <div class="input-group">
+                            <input type="text" class="input-field" required id="name-input">
+                            <label for="name-input" class="input-label">Your Name</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="input-field" required id="email-input">
+                            <label for="email-input" class="input-label">Your Email</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="" class="input-field" required id="msg-input" cols="30" rows="5"></textarea>
+                            <label for="msg-input" class="input-label">Project Details</label>
+                            <span class="input-highlight"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-copy">&#169; <span id="current-year"></span> Somesh Ramesh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
